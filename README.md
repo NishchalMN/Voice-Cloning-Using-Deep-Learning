@@ -24,6 +24,9 @@ The project uses a deep learning approach that involves:
 1. **Text Encoding**: Processing input text to generate linguistic and phonetic representations.
 2. **Feature Extraction from Mel-Spectrogram**: Converting audio into Mel-spectrograms, which serve as intermediate representations in the pipeline.
 3. **Audio Generation**: Converting Mel-spectrograms to audio using algorithms like Griffin-Lim or a vocoder for high-quality output.
+   
+<img width="649" alt="Screenshot 2024-11-12 at 12 47 16 PM" src="https://github.com/user-attachments/assets/0b240f6f-9eb8-4e60-bf08-b644d7ed3d4a">
+
 
 The model architecture includes convolutional and recurrent neural networks, particularly leveraging:
 - A **Text Encoder** for linguistic features
@@ -50,6 +53,8 @@ The model architecture follows a three-stage approach:
 1. **Text Encoder**: Encodes input text with 1-D convolutional layers and Bi-directional LSTM to capture linguistic features.
 2. **Feature Extraction from Mel-Spectrogram**: Converts audio input to Mel-spectrograms using parameters like sample rate, FFT window, and Mel bands.
 3. **Concatenation and Audio Generation**: Combines text and audio features, generating Mel-spectrograms that are then converted to audio using Griffin-Lim or vocoders.
+
+<img width="783" alt="Screenshot 2024-11-12 at 12 46 37 PM" src="https://github.com/user-attachments/assets/065b5cd6-7c51-460e-b806-5c494de8dc8d">
 
 The training uses the Adam optimizer with Mean Squared Error (MSE) and Mean Absolute Error (MAE) as metrics to evaluate model performance.
 
